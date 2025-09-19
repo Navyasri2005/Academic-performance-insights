@@ -1,53 +1,59 @@
-# Student Result Analysis
+# Student Performance Dataset Analysis
 
 ## Project Overview
-The Student Result Analysis project uses a Jupyter Notebook to explore, clean, and analyze student academic performance data. It identifies trends, correlations, and factors affecting student outcomes, providing actionable insights for teachers, schools, and policymakers.
+This project analyzes a comprehensive dataset of student demographic attributes, parental background, study habits, and test results to uncover patterns and relationships affecting academic performance. The goal is to provide insights that can support evidence-based educational strategies.
 
-## Features
-- Data cleaning and preprocessing to handle missing values, outliers, and inconsistencies  
-- Exploratory data analysis (EDA) of marks, grades, attendance, and demographics  
-- Statistical insights such as averages, medians, and performance distributions  
-- Correlation analysis between key features (for example, attendance vs. grades)  
-- Optional predictive modeling to forecast student outcomes  
+## Dataset Description
+The dataset consists of 30,641 records and 15 columns. Each record represents a student with demographic information, parental education, family context, and academic scores in math, reading, and writing.
 
-## Dataset
-The dataset typically includes:
-- Student IDs  
-- Subject-wise scores  
-- Attendance percentage  
-- Demographic information (if available)  
-- Pass/Fail or Grade categories  
+### Columns
+- Gender  
+- EthnicGroup  
+- ParentEduc (parental education level)  
+- LunchType (standard or free/reduced)  
+- TestPrep (test preparation course completion)  
+- ParentMaritalStatus  
+- PracticeSport (frequency of sports activity)  
+- IsFirstChild  
+- NrSiblings  
+- TransportMeans (school_bus, private, etc.)  
+- WklyStudyHours (<5, 5–10, etc.)  
+- MathScore  
+- ReadingScore  
+- WritingScore  
 
-*(Adjust according to your actual dataset.)*
+## Objectives
+- Perform data cleaning and preprocessing on the dataset.  
+- Conduct exploratory data analysis (EDA) to identify trends and distributions.  
+- Examine relationships between demographic factors and academic scores.  
+- Provide actionable insights to improve student performance.  
 
-## Folder Structure
-
-```bash
-├── Student Result Analysis.ipynb   # Main Jupyter notebook
-├── data/                           # (Optional) Dataset files
-├── README.md                       # Project documentation
-└── requirements.txt                # Dependencies list
-````
+## Key Insights (Examples)
+- Test preparation completion correlates with higher scores across all subjects.  
+- Students with higher weekly study hours generally perform better in math, reading, and writing.  
+- Parental education and lunch type show measurable impact on academic outcomes.  
+- Extracurricular activities such as regular sports practice may be associated with improved performance.  
 
 ## Technology Stack
+- Python  
+- Libraries: Pandas, NumPy, Matplotlib, Seaborn  
 
-* Python
-* Jupyter Notebook
-* Libraries: Pandas, NumPy, Matplotlib, Seaborn
+## Project Structure
 
-## Key Insights (Example)
-
-* Students with higher attendance tend to achieve better grades
-* Certain subjects show strong correlations between midterm and final scores
-* Gender or region-based trends may emerge depending on the dataset
+```bash
+├── Expanded_data_with_more_features.csv   # Dataset
+├── analysis.ipynb                         # Jupyter Notebook with analysis (to be created)
+├── README.md                              # Project documentation
+└── requirements.txt                       # Dependencies list
+````
 
 ## How to Use
 
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/<your-username>/student-result-analysis.git
-cd student-result-analysis
+git clone https://github.com/<your-username>/student-performance-analysis.git
+cd student-performance-analysis
 ```
 
 2. Install dependencies:
@@ -56,20 +62,19 @@ cd student-result-analysis
 pip install -r requirements.txt
 ```
 
-3. Open the notebook:
+3. Open the analysis notebook:
 
 ```bash
-jupyter notebook "Student Result Analysis.ipynb"
+jupyter notebook analysis.ipynb
 ```
 
-## Future Improvements
+## Future Work
 
-* Add machine learning models to predict student outcomes
-* Create an interactive dashboard using Streamlit or Power BI
-* Incorporate additional datasets for richer insights
+* Build predictive models to forecast student scores using demographic data.
+* Create dashboards for interactive exploration of the dataset.
+* Explore causal relationships and interventions for student success.
 
-Student Result Analysis provides a clear approach to turning raw academic data into meaningful insights.
-
+Student Performance Dataset Analysis provides a comprehensive look into factors that drive academic outcomes and offers actionable insights for educational stakeholders.
 
 
 
